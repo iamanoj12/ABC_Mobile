@@ -11,8 +11,9 @@ router.post("/", async (req, res) => {
 
         await contact.save();
 
-        res.status(201).json({
-            message: "Message Sent Successfully"
+        res.status(200).json({
+            success: true,
+            message: "Message sent successfully"
         });
 
     } catch (err) {

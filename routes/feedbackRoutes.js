@@ -11,8 +11,9 @@ router.post("/", async (req, res) => {
 
         await feedback.save();
 
-        res.status(201).json({
-            message: "Feedback Added"
+        res.status(200).json({
+            success: true,
+            message: "Feedback submitted successfully"
         });
 
     } catch (err) {
